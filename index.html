@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,51 +11,54 @@
 </head>
 
 <body>
-    <div class="navBox">
-      <img src="img/profile.jpg" id="profile">
-      <h2 id="heading"> David Church </h2> 
+  <div class="navBar">
+    <header class="header">
+      <a href="" class="logo">David Church</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#work">About</a></li>
+        <li><a href="#about">Education</a></li>
+        <li><a href="#careers">Skills</a></li>
+        <li><a href="#contact">Projects</a></li>
+        <li><a href="#contact">Github</a></li>
+        <li><a href="#contact">CV</a></li>
+      </ul>
+    </header>
+  </div>
 
-      <hr id="nav-split">
+  <div class="container">
+    <script src="js/welcome.js"></script>
 
-      <nav id="navBar">
-        <a href="#about">About</a><br>
-        <a href="#education">Education</a><br>
-        <a href="#skills">Skills</a><br>
-        <a href="#projects">Projects</a><br>
-        <a href="#github">Github</a><br>
-        <a href="#cv">CV</a><br>
-
-        <footer>
-          © 2020 Copyright: David Church
-        </footer>
-      </nav>
+    <div class="about">
+      <p>I am a developer/designer who enjoys creating interactive experiences in the browser either on mobile, desktop,
+        laptop or tablets. I have an interest in frontend
+        development with a small insight into running the backend with experience with creating & maintaining SQL
+        databases. <br><br> I spent my time in education at Edinburgh college where I began to pique an
+        interest in the user experience within web applications, from there I moved onto Napier University where I
+        eventually graduated with a 2:1 classification in Web Design & Development. <br><br>
+        This course allowed me to learn and experience working with users to plan, create & test my designs either that
+        be prototyping or full-blown applications.
+      </p>
     </div>
 
-    <div class="container">
-      <script src="js/welcome.js"></script>
+    <div class="featured">
+      <h2>Featured Project</h2>
 
-      <div class="about">
-        <p>I am a developer/designer who enjoys creating interactive experiences in the browser either on mobile, desktop, laptop or tablets. I have an interest in frontend 
-          development with a small insight into running the backend with experience with creating & maintaining SQL databases. <br><br> I spent my time in education at Edinburgh college where I began to pique an
-           interest in the user experience within web applications, from there I moved onto Napier University where I eventually graduated with a 2:1 classification in Web Design & Development. <br><br> 
-           This course allowed me to learn and experience working with users to plan, create & test my designs either that be prototyping or full-blown applications.
-          </p>
+      <h3>Little Boxes</h3>
+      <p class="featured-descripton">Little Boxes is a VR puzzle game that has been developed to run in a browser via PC
+        or mobile. Using the A-Frame framework I have managed to develop this experience for the use of a Google
+        Cardboard. <br><br>
+        This game was designed in progression with a study on how the users' experience can be improved within a VR
+        environment. Looking at different UX methods I have managed to create an experience that a user can hopefully
+        interact with without experiencing the usual symptoms of VR.
+      </p>
+
+      <div class="featureImg">
+        <img src="img/4-littleboxes/home.png" style="width: 100%;">
       </div>
-
-      <div class="featured">
-        <h2>Featured Project</h2>
-
-        <h3>Little Boxes</h3>
-        <p class="featured-descripton">Little Boxes is a VR puzzle game that has been developed to run in a browser via PC or mobile. Using the A-Frame framework I have managed to develop this experience for the use of a Google Cardboard. <br><br>
-          This game was designed in progression with a study on how the users' experience can be improved within a VR environment. Looking at different UX methods I have managed to create an experience that a user can hopefully interact with without experiencing the usual symptoms of VR.
-        </p>
-
-        <div class="featureImg">
-          <img src="img/4-littleboxes/home.png" alt="Snow" style="width: 100%;">
-        </div>
-        <div class="featureImg">
-          <img src="img/4-littleboxes/vr-2.png" alt="Forest" style="width: 100%;">
-        </div>
     </div>
+  </div>
 </body>
+
 </html>
