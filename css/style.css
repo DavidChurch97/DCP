@@ -141,6 +141,19 @@ footer {
   background-color: #132D46;
   color: white;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.education-info {
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+#eduSplit {
+  width: 25%;
+  float: left;
 }
 
 @media only screen and (min-width: 600px) {
@@ -168,7 +181,7 @@ footer {
   }
 
   .container {
-    padding-top: 8rem;
+    padding-top: 10rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
