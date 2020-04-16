@@ -9,7 +9,7 @@ if (hourNow > 18) {
 } else if (hourNow > 0) {
     greeting = 'Good morning';
 } else {
-    greeting = 'Welcome to my portfolio';
+    greeting = 'Hi';
 }
 
 document.write('<h1>' + greeting + " and welcome to my portfolio" + '</h1>');
