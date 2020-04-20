@@ -32,7 +32,7 @@ a {
 
 .header {
   background-color: #132D46;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -119,24 +119,24 @@ a {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 500px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -193,7 +193,7 @@ footer {
     padding-left: .1rem;
     padding-right: 5rem;
   }
-  
+
   .skillPanel:after {
     content: "";
     display: table;
@@ -207,7 +207,7 @@ footer {
 
 /* Add padding BETWEEN each column */
 .project-list,
-.project-list > .column {
+.project-list>.column {
   padding: .5rem;
 }
 
@@ -217,7 +217,7 @@ footer {
   width: 30%;
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .project-list:after {
   content: "";
   display: table;
@@ -237,18 +237,30 @@ footer {
   width: 50%;
 }
 
+@media only screen and (max-width: 767px) {
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 20px 30px;
   }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }
@@ -258,7 +270,7 @@ footer {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-} 
+}
 
 @media only screen and (min-width: 992px) {
   .container {
@@ -266,7 +278,7 @@ footer {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-} 
+}
 
 @media only screen and (min-width: 1200px) {
   .container {
