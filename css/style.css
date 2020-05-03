@@ -140,18 +140,6 @@ a {
   top: 0;
 }
 
-footer {
-  font-size: 1.5rem;
-  width: 100%;
-  background-color: #132D46;
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  overflow: hidden;
-  display: none;
-}
-
 .education-info {
   line-height: 1.6;
   padding-bottom: 1rem;
