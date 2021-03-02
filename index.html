@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DCP</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-  <link href='https://fonts.google.com/specimen/Montserrat' rel='stylesheet'>
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
-  <div class="navBar">
-    <header class="header">
-      <a href="#" class="logo">David Church</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="index.html">About</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="https://github.com/DavidChurch97">Github</a></li>
-        <li><a href="asset\David Church CV.pdf">CV</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </header>
-  </div>
 
-  <div class="container">
-    <script src="js/welcome.js"></script>
+    <div class="navBar">
+        <header class="header">
+            <a href="index.html" class="logo">Portfolio <span id="name">David Church</span> </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="assets\David Church CV.pdf">CV</a></li>
+            </ul>
+        </header>
 
-    <div class="about">
-      <p>I am a developer/designer who enjoys creating interactive experiences in the browser either on mobile, desktop,
-        laptop or tablets. I have an interest in frontend
-        development with a small insight into running the backend with experience with creating & maintaining SQL
-        databases. <br><br> I spent my time in education at Edinburgh college where I began to pique an
-        interest in the user experience within web applications, from there I moved onto Napier University where I
-        eventually graduated with a 2:1 classification in Web Design & Development. <br><br>
-        This course allowed me to learn and experience working with users to plan, create & test my designs either that
-        be prototyping or full-blown applications.
-      </p>
     </div>
-
-    <div class="featured">
-      <h2>Featured Project</h2>
-
-      <h3>Little Boxes</h3>
-      <p class="featured-descripton">Little Boxes is a VR puzzle game that has been developed to run in a browser via PC
-        or mobile. Using the A-Frame framework I have managed to develop this experience for the use of a Google
-        Cardboard. <br><br>
-        This game was designed in progression with a study on how the users' experience can be improved within a VR
-        environment. Looking at different UX methods I have managed to create an experience that a user can hopefully
-        interact with without experiencing the usual symptoms of VR.
-      </p>
-
-      <div class="featureImg">
-        <img src="img/4-littleboxes/home.png" style="width: 100%;">
-      </div>
+    
+    <div class="contatiner">
+        <div id="project1">
+            <div id="all">
+                <div class="view view-tenth">
+                    <a href="lb.html" id="projectLink">
+                        <img src="assets\images\project\lb_main.png" />
+                    </a>
+                    <div class="mask">
+                        <h2>Little Boxes</h2>
+                        <p>VR puzzle game designed to run in a browser.</p>
+                        <a href="lb.html" class="info">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="project2">
+                <div id="all">
+                    <div class="view view-tenth">
+                        <a href="lb.html" id="projectLink">
+                            <img src="assets\images\project\wb_main.png" />
+                        </a>
+                        <div class="mask">
+                          <h2>Whisper Bank</h2>
+                          <p>A design Idea I had for a mobile banking app.</p>
+                          <a href="wb.html" class="info">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
-  </div>
 </body>
-
 </html>
